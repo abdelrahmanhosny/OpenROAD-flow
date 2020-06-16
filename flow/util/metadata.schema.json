@@ -126,8 +126,8 @@
         "total_time"
     ],
     "properties": {
-        "generate_date": {
-            "$id": "#/properties/generate_date",
+        "run__flow__generate_date": {
+            "$id": "#/properties/run__flow__generate_date",
             "type": "string",
             "format": "date-time",
             "description": "Generation date and time of this entry.",
@@ -136,8 +136,8 @@
                 "2020-03-05 20:35"
             ]
         },
-        "openroad_version": {
-            "$id": "#/properties/openroad_version",
+        "run__flow__openroad_version": {
+            "$id": "#/properties/run__flow__openroad_version",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -145,8 +145,8 @@
                 "1.1.0"
             ]
         },
-        "openroad_commit": {
-            "$id": "#/properties/openroad_commit",
+        "run__flow__openroad_commit": {
+            "$id": "#/properties/run__flow__openroad_commit",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -154,8 +154,8 @@
                 "8c0d2db176768e500a974b8794f65753faa9ef23"
             ]
         },
-        "uuid": {
-            "$id": "#/properties/uuid",
+        "run__flow__uuid": {
+            "$id": "#/properties/run__flow__uuid",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -163,8 +163,8 @@
                 "25140bf7-d578-4baa-86cc-5fbd45292207"
             ]
         },
-        "design": {
-            "$id": "#/properties/design",
+        "run__flow__design": {
+            "$id": "#/properties/run__flow__design",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -172,8 +172,8 @@
                 "gcd"
             ]
         },
-        "platform": {
-            "$id": "#/properties/platform",
+        "run__flow__platform": {
+            "$id": "#/properties/run__flow__platform",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -190,8 +190,8 @@
                 ""
             ]
         },
-        "hostname": {
-            "$id": "#/properties/hostname",
+        "run__flow__hostname": {
+            "$id": "#/properties/run__flow__hostname",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -199,8 +199,8 @@
                 "vlsipool-j19.eecs.umich.edu"
             ]
         },
-        "yosys_version": {
-            "$id": "#/properties/yosys_version",
+        "run__synth__yosys_version": {
+            "$id": "#/properties/run__synth__yosys_version",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -208,8 +208,8 @@
                 "0.8+498 (git sha1 1280d79b, gcc 8.3.1 -fPIC -Os)"
             ]
         },
-        "yosys_cell_count": {
-            "$id": "#/properties/yosys_cell_count",
+        "synth__inst__num__total": {
+            "$id": "#/properties/synth__inst__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -218,8 +218,8 @@
                 457
             ]
         },
-        "yosys_chip_area": {
-            "$id": "#/properties/yosys_chip_area",
+        "synth__inst__stdcell__area__total": {
+            "$id": "#/properties/synth__inst__stdcell__area__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -228,8 +228,8 @@
                 "697.718000"
             ]
         },
-        "yosys_runtime": {
-            "$id": "#/properties/yosys_runtime",
+        "run__synth__yosys_runtime__total": {
+            "$id": "#/properties/run__synth__yosys_runtime__total",
             "type": "string",
             "description": "Yosys self-reported user cpu time",
             "improvement": 0,
@@ -237,8 +237,8 @@
                 "0.91s"
             ]
         },
-        "yosys_mem": {
-            "$id": "#/properties/yosys_mem",
+        "run__synth__yosys_mem": {
+            "$id": "#/properties/run__synth__yosys_mem",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -246,8 +246,8 @@
                 "153.69 MB"
             ]
         },
-        "yosys_warnings": {
-            "$id": "#/properties/yosys_warnings",
+        "run__synth__yosys_warnings": {
+            "$id": "#/properties/run__synth__yosys_warnings",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -256,8 +256,8 @@
                 72
             ]
         },
-        "synth_time": {
-            "$id": "#/properties/synth_time",
+        "run__synth__runtime__total": {
+            "$id": "#/properties/run__synth__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -266,8 +266,8 @@
                 "0:01.54"
             ]
         },
-        "synth_cpu": {
-            "$id": "#/properties/synth_cpu",
+        "run__synth__cpu__total": {
+            "$id": "#/properties/run__synth__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -275,8 +275,8 @@
                 "81%"
             ]
         },
-        "synth_mem": {
-            "$id": "#/properties/synth_mem",
+        "run__synth__mem__peak": {
+            "$id": "#/properties/run__synth__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -285,8 +285,8 @@
                 29516
             ]
         },
-        "floorplan_tns": {
-            "$id": "#/properties/floorplan_tns",
+        "floorplan__slack__average__totneg": {
+            "$id": "#/properties/floorplan__slack__average__totneg",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -295,8 +295,8 @@
                 0.00
             ]
         },
-        "floorplan_wns": {
-            "$id": "#/properties/floorplan_wns",
+        "floorplan__slack__average__worst": {
+            "$id": "#/properties/floorplan__slack__average__worst",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -305,8 +305,8 @@
                 0.00
             ]
         },
-        "floorplan_area": {
-            "$id": "#/properties/floorplan_area",
+        "floorplan__std__area__total": {
+            "$id": "#/properties/floorplan__std__area__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Total standard cell area during floorplanning (um^2)",
@@ -315,8 +315,8 @@
                 2791
             ]
         },
-        "floorplan_util": {
-            "$id": "#/properties/floorplan_util",
+        "floorplan__util": {
+            "$id": "#/properties/floorplan__util",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -324,8 +324,8 @@
                 "11%"
             ]
         },
-        "floorplan_warnings": {
-            "$id": "#/properties/floorplan_warnings",
+        "run__floorplan__warnings": {
+            "$id": "#/properties/run__floorplan__warnings",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -334,8 +334,8 @@
                 0
             ]
         },
-        "floorplan_time": {
-            "$id": "#/properties/floorplan_time",
+        "run__floorplan__runtime__total": {
+            "$id": "#/properties/run__floorplan__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -344,8 +344,8 @@
                 "0:00.82"
             ]
         },
-        "floorplan_cpu": {
-            "$id": "#/properties/floorplan_cpu",
+        "run__floorplan__cpu__total": {
+            "$id": "#/properties/run__floorplan__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -353,8 +353,8 @@
                 "66%"
             ]
         },
-        "floorplan_mem": {
-            "$id": "#/properties/floorplan_mem",
+        "run__floorplan__mem__peak": {
+            "$id": "#/properties/run__floorplan__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -363,8 +363,8 @@
                 50436
             ]
         },
-        "floorplan_io_count": {
-            "$id": "#/properties/floorplan_io_count",
+        "floorplan__io__count__total": {
+            "$id": "#/properties/floorplan__io__count__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Number of input/output ports",
@@ -373,8 +373,8 @@
                 54
             ]
         },
-        "floorplan_io_time": {
-            "$id": "#/properties/floorplan_io_time",
+        "floorplan__io__time__total": {
+            "$id": "#/properties/floorplan__io__time__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -383,8 +383,8 @@
                 "0:00.53"
             ]
         },
-        "floorplan_io_cpu": {
-            "$id": "#/properties/floorplan_io_cpu",
+        "floorplan__io__cpu__total": {
+            "$id": "#/properties/floorplan__io__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -392,8 +392,8 @@
                 "97%"
             ]
         },
-        "floorplan_io_mem": {
-            "$id": "#/properties/floorplan_io_mem",
+        "floorplan__io__mem__peak": {
+            "$id": "#/properties/floorplan__io__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -402,8 +402,8 @@
                 49144
             ]
         },
-        "floorplan_tdms_time": {
-            "$id": "#/properties/floorplan_tdms_time",
+        "floorplan__tdms__time__total": {
+            "$id": "#/properties/floorplan__tdms__time__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -412,8 +412,8 @@
                 "0:00.51"
             ]
         },
-        "floorplan_tdms_cpu": {
-            "$id": "#/properties/floorplan_tdms_cpu",
+        "floorplan__tdms__cpu__total": {
+            "$id": "#/properties/floorplan__tdms__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -421,8 +421,8 @@
                 "97%"
             ]
         },
-        "floorplan_tdms_mem": {
-            "$id": "#/properties/floorplan_tdms_mem",
+        "floorplan__tdms__mem__total": {
+            "$id": "#/properties/floorplan__tdms__mem__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -431,8 +431,8 @@
                 49268
             ]
         },
-        "mplace_macro_count": {
-            "$id": "#/properties/mplace_macro_count",
+        "macroplace__inst__macro__count__total": {
+            "$id": "#/properties/macroplace__inst__macro__count__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Total count of block macros in the design",
@@ -441,8 +441,8 @@
                 0
             ]
         },
-        "mplace_solutions": {
-            "$id": "#/properties/mplace_solutions",
+        "macroplace__solutions": {
+            "$id": "#/properties/macroplace__solutions",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -451,8 +451,8 @@
                 0
             ]
         },
-        "mplace_time": {
-            "$id": "#/properties/mplace_time",
+        "run__macroplace__runtime__total": {
+            "$id": "#/properties/run__macroplace__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -461,8 +461,8 @@
                 "0:00.50"
             ]
         },
-        "mplace_cpu": {
-            "$id": "#/properties/mplace_cpu",
+        "run__macroplace__cpu__total": {
+            "$id": "#/properties/run__macroplace__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -470,8 +470,8 @@
                 "97%"
             ]
         },
-        "mplace_mem": {
-            "$id": "#/properties/mplace_mem",
+        "run__macroplace__mem__peak": {
+            "$id": "#/properties/run__macroplace__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -480,8 +480,8 @@
                 49268
             ]
         },
-        "tapcell_time": {
-            "$id": "#/properties/tapcell_time",
+        "run__tapcell__runtime__total": {
+            "$id": "#/properties/run__tapcell__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -490,8 +490,8 @@
                 "0:00.51"
             ]
         },
-        "tapcell_cpu": {
-            "$id": "#/properties/tapcell_cpu",
+        "run__tapcell__cpu__total": {
+            "$id": "#/properties/run__tapcell__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -499,8 +499,8 @@
                 "97%"
             ]
         },
-        "tapcell_mem": {
-            "$id": "#/properties/tapcell_mem",
+        "run__tapcell__mem__peak": {
+            "$id": "#/properties/run__tapcell__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -509,8 +509,8 @@
                 50100
             ]
         },
-        "pdn_time": {
-            "$id": "#/properties/pdn_time",
+        "run__pdn__runtime__total": {
+            "$id": "#/properties/run__pdn__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -519,8 +519,8 @@
                 "0:00.59"
             ]
         },
-        "pdn_cpu": {
-            "$id": "#/properties/pdn_cpu",
+        "run__pdn__cpu__total": {
+            "$id": "#/properties/run__pdn__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -528,8 +528,8 @@
                 "97%"
             ]
         },
-        "pdn_mem": {
-            "$id": "#/properties/pdn_mem",
+        "run__pdn__mem__peak": {
+            "$id": "#/properties/run__pdn__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -538,8 +538,8 @@
                 53860
             ]
         },
-        "globalplace_hpwl": {
-            "$id": "#/properties/globalplace_hpwl",
+        "globalplace__wirelength__est": {
+            "$id": "#/properties/globalplace__wirelength__est",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": -1,
@@ -547,8 +547,8 @@
                 "N/A"
             ]
         },
-        "globalplace_ws": {
-            "$id": "#/properties/globalplace_ws",
+        "globalplace__slack__average__worst": {
+            "$id": "#/properties/globalplace__slack__average__worst",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 1,
@@ -556,8 +556,8 @@
                 "9.35e+00"
             ]
         },
-        "globalplace_tns": {
-            "$id": "#/properties/globalplace_tns",
+        "globalplace__slack__average__totneg": {
+            "$id": "#/properties/globalplace__slack__average__totneg",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 1,
@@ -565,8 +565,8 @@
                 "0.00e+00"
             ]
         },
-        "globalplace_util": {
-            "$id": "#/properties/globalplace_util",
+        "globalplace__util": {
+            "$id": "#/properties/globalplace__util",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -574,8 +574,8 @@
                 "10.956558"
             ]
         },
-        "globalplace_time": {
-            "$id": "#/properties/globalplace_time",
+        "run__globalplace__runtime__total": {
+            "$id": "#/properties/run__globalplace__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -584,8 +584,8 @@
                 "0:05.14"
             ]
         },
-        "globalplace_cpu": {
-            "$id": "#/properties/globalplace_cpu",
+        "run__globalplace__cpu__total": {
+            "$id": "#/properties/run__globalplace__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -593,8 +593,8 @@
                 "99%"
             ]
         },
-        "globalplace_mem": {
-            "$id": "#/properties/globalplace_mem",
+        "run__globalplace__mem__peak": {
+            "$id": "#/properties/run__globalplace__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -603,8 +603,8 @@
                 77236
             ]
         },
-        "resizer_pre_tns": {
-            "$id": "#/properties/resizer_pre_tns",
+        "resizer__pre__slack__average__totneg": {
+            "$id": "#/properties/resizer__pre__slack__average__totneg",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Total negative slack before running resizer (library time units)",
@@ -613,8 +613,8 @@
                 0.0
             ]
         },
-        "resizer_pre_wns": {
-            "$id": "#/properties/resizer_pre_wns",
+        "resizer__pre__slack__average_worst": {
+            "$id": "#/properties/resizer__pre__slack__average_worst",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Worst negative slack before running resizer (library time units)",
@@ -623,8 +623,8 @@
                 0.0
             ]
         },
-        "resizer_pre_area": {
-            "$id": "#/properties/resizer_pre_area",
+        "resizer__pre__core__area__area": {
+            "$id": "#/properties/resizer__pre__core__area__area",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": -1,
@@ -632,8 +632,8 @@
                 "2912 u^2"
             ]
         },
-        "resizer_pre_util": {
-            "$id": "#/properties/resizer_pre_util",
+        "resizer__pre__util": {
+            "$id": "#/properties/resizer__pre__util",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -641,8 +641,8 @@
                 "11%"
             ]
         },
-        "resizer_ibuf_count": {
-            "$id": "#/properties/resizer_ibuf_count",
+        "resizer__ibuf_count": {
+            "$id": "#/properties/resizer__ibuf_count",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Number of buffers inserted by resizer on input ports",
@@ -651,8 +651,8 @@
                 35
             ]
         },
-        "resizer_obuf_count": {
-            "$id": "#/properties/resizer_obuf_count",
+        "resizer__obuf_count": {
+            "$id": "#/properties/resizer__obuf_count",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Number of buffers inserted by resizer on output ports",
@@ -661,8 +661,8 @@
                 18
             ]
         },
-        "resizer_resize_count": {
-            "$id": "#/properties/resizer_resize_count",
+        "resizer__resize_count": {
+            "$id": "#/properties/resizer__resize_count",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Number of instances resized by resizer",
@@ -671,8 +671,8 @@
                 212
             ]
         },
-        "resizer_hbuf_count": {
-            "$id": "#/properties/resizer_hbuf_count",
+        "resizer__hbuf_count": {
+            "$id": "#/properties/resizer__hbuf_count",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Number of hold buffers inserted byu resizer",
@@ -681,8 +681,8 @@
                 0
             ]
         },
-        "resizer_maxcap_viols": {
-            "$id": "#/properties/resizer_maxcap_viols",
+        "resizer__maxcap_viols": {
+            "$id": "#/properties/resizer__maxcap_viols",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -691,8 +691,8 @@
                 0
             ]
         },
-        "resizer_maxslew_viols": {
-            "$id": "#/properties/resizer_maxslew_viols",
+        "resizer__maxslew_viols": {
+            "$id": "#/properties/resizer__maxslew_viols",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -701,8 +701,8 @@
                 0
             ]
         },
-        "resizer_maxfanout_viols": {
-            "$id": "#/properties/resizer_maxfanout_viols",
+        "resizer__maxfanout_viols": {
+            "$id": "#/properties/resizer__maxfanout_viols",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -711,8 +711,8 @@
                 0
             ]
         },
-        "resizer_maxfanout_bufs": {
-            "$id": "#/properties/resizer_maxfanout_bufs",
+        "resizer__maxfanout_bufs": {
+            "$id": "#/properties/resizer__maxfanout_bufs",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -721,8 +721,8 @@
                 0
             ]
         },
-        "resizer_post_tns": {
-            "$id": "#/properties/resizer_post_tns",
+        "resizer__post__slack__average__totneg": {
+            "$id": "#/properties/resizer__post__slack__average__totneg",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -731,8 +731,8 @@
                 0.0
             ]
         },
-        "resizer_post_wns": {
-            "$id": "#/properties/resizer_post_wns",
+        "resizer__post__slack__average__worst": {
+            "$id": "#/properties/resizer__post__slack__average__worst",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -741,8 +741,8 @@
                 "0.00"
             ]
         },
-        "resizer_post_area": {
-            "$id": "#/properties/resizer_post_area",
+        "resizer__post__core__area__total": {
+            "$id": "#/properties/resizer__post__core__area__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": -1,
@@ -750,8 +750,8 @@
                 "2952 u^2"
             ]
         },
-        "resizer_post_util": {
-            "$id": "#/properties/resizer_post_util",
+        "resizer__post__util": {
+            "$id": "#/properties/resizer__post__util",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -759,8 +759,8 @@
                 "12%"
             ]
         },
-        "resizer_time": {
-            "$id": "#/properties/resizer_time",
+        "run__resizer__runtime__total": {
+            "$id": "#/properties/run__resizer__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -769,8 +769,8 @@
                 "0:05.05"
             ]
         },
-        "resizer_cpu": {
-            "$id": "#/properties/resizer_cpu",
+        "run__resizer__cpu__total": {
+            "$id": "#/properties/run__resizer__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -778,8 +778,8 @@
                 "99%"
             ]
         },
-        "resizer_mem": {
-            "$id": "#/properties/resizer_mem",
+        "run__resizer__mem__peak": {
+            "$id": "#/properties/run__resizer__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -788,8 +788,8 @@
                 78336
             ]
         },
-        "dp_core_area": {
-            "$id": "#/properties/dp_core_area",
+        "detailedplace__inst__core__area__total": {
+            "$id": "#/properties/detailedplace__inst__core__area__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Design core area (um^2)",
@@ -798,8 +798,8 @@
                 6398.4
             ]
         },
-        "dp_total_cells": {
-            "$id": "#/properties/dp_total_cells",
+        "detailedplace__inst__num__total": {
+            "$id": "#/properties/detailedplace__inst__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Standard cell instance count during detail placement",
@@ -808,8 +808,8 @@
                 624
             ]
         },
-        "dp_design_utilization": {
-            "$id": "#/properties/dp_design_utilization",
+        "detailedplace__util": {
+            "$id": "#/properties/detailedplace__util",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Utilization % during detail placement. Measured as (standard cell area)/(core area)",
@@ -818,8 +818,8 @@
                 11
             ]
         },
-        "dp_total_displacement": {
-            "$id": "#/properties/dp_total_displacement",
+        "detailedplace__total_displacement": {
+            "$id": "#/properties/detailedplace__total_displacement",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Total instance displacement after detail placement (um)",
@@ -828,8 +828,8 @@
                 522.8
             ]
         },
-        "dp_average_displacement": {
-            "$id": "#/properties/dp_average_displacement",
+        "detailedplace__average_displacement": {
+            "$id": "#/properties/detailedplace__average_displacement",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Average instance displacement after detail placement (um)",
@@ -838,8 +838,8 @@
                 0.9
             ]
         },
-        "dp_max_displacement": {
-            "$id": "#/properties/dp_max_displacement",
+        "detailedplace__max_displacement": {
+            "$id": "#/properties/detailedplace__max_displacement",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Maximum instance displacement after detail placement (um)",
@@ -848,8 +848,8 @@
                 6.2
             ]
         },
-        "dp_original_HPWL": {
-            "$id": "#/properties/dp_original_HPWL",
+        "detailedplace__wirelength__est__original": {
+            "$id": "#/properties/detailedplace__wirelength__est__original",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -858,8 +858,8 @@
                 6657.7
             ]
         },
-        "dp_legalized_HPWL": {
-            "$id": "#/properties/dp_legalized_HPWL",
+        "detailedplace__wirelength__est__legalized": {
+            "$id": "#/properties/detailedplace__wirelength__est__legalized",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -868,8 +868,8 @@
                 6858.0
             ]
         },
-        "dp_delta_HPWL": {
-            "$id": "#/properties/dp_delta_HPWL",
+        "detailedplace__wirelength__est__delta": {
+            "$id": "#/properties/detailedplace__wirelength__est__delta",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -878,8 +878,8 @@
                 3
             ]
         },
-        "dp_time": {
-            "$id": "#/properties/dp_time",
+        "run__detailedplace__runtime__total": {
+            "$id": "#/properties/run__detailedplace__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -888,8 +888,8 @@
                 "0:00.53"
             ]
         },
-        "dp_cpu": {
-            "$id": "#/properties/dp_cpu",
+        "run__detailedplace__cpu__total": {
+            "$id": "#/properties/run__detailedplace__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -897,8 +897,8 @@
                 "95%"
             ]
         },
-        "dp_mem": {
-            "$id": "#/properties/dp_mem",
+        "run__detailedplace__mem__peak": {
+            "$id": "#/properties/run__detailedplace__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -907,8 +907,8 @@
                 51952
             ]
         },
-        "cts_time": {
-            "$id": "#/properties/cts_time",
+        "run__cts__runtime__total": {
+            "$id": "#/properties/run__cts__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -917,8 +917,8 @@
                 "0:00.60"
             ]
         },
-        "cts_cpu": {
-            "$id": "#/properties/cts_cpu",
+        "run__cts__cpu__total": {
+            "$id": "#/properties/run__cts__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -926,8 +926,8 @@
                 "95%"
             ]
         },
-        "cts_mem": {
-            "$id": "#/properties/cts_mem",
+        "run__cts__mem__peak": {
+            "$id": "#/properties/run__cts__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -936,8 +936,8 @@
                 55824
             ]
         },
-        "fastroute_time": {
-            "$id": "#/properties/fastroute_time",
+        "run__globalroute__runtime__total": {
+            "$id": "#/properties/run__globalroute__runtime__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -946,8 +946,8 @@
                 "0:04.85"
             ]
         },
-        "fastroute_cpu": {
-            "$id": "#/properties/fastroute_cpu",
+        "run__globalroute__cpu__total": {
+            "$id": "#/properties/run__globalroute__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -955,8 +955,8 @@
                 "99%"
             ]
         },
-        "fastroute_mem": {
-            "$id": "#/properties/fastroute_mem",
+        "run__globalroute__mem__peak": {
+            "$id": "#/properties/run__globalroute__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -965,8 +965,8 @@
                 81784
             ]
         },
-        "droute_num_layers": {
-            "$id": "#/properties/droute_num_layers",
+        "detailedroute__layers__num__total": {
+            "$id": "#/properties/detailedroute__layers__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -975,8 +975,8 @@
                 19
             ]
         },
-        "droute_num_macros": {
-            "$id": "#/properties/droute_num_macros",
+        "detailedroute__inst__macro__num__total": {
+            "$id": "#/properties/detailedroute__inst__macro__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -985,8 +985,8 @@
                 134
             ]
         },
-        "droute_num_vias": {
-            "$id": "#/properties/droute_num_vias",
+        "detailedroute__num_vias": {
+            "$id": "#/properties/detailedroute__num_vias",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -995,8 +995,8 @@
                 27
             ]
         },
-        "droute_trackPts": {
-            "$id": "#/properties/droute_trackPts",
+        "detailedroute__trackPts": {
+            "$id": "#/properties/detailedroute__trackPts",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1005,8 +1005,8 @@
                 20
             ]
         },
-        "droute_defvias": {
-            "$id": "#/properties/droute_defvias",
+        "detailedroute__defvias__num__total": {
+            "$id": "#/properties/detailedroute__defvias__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1015,8 +1015,8 @@
                 6
             ]
         },
-        "droute_num_components": {
-            "$id": "#/properties/droute_num_components",
+        "detailedroute__components__num__total": {
+            "$id": "#/properties/detailedroute__components__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1025,8 +1025,8 @@
                 631
             ]
         },
-        "droute_num_terminals": {
-            "$id": "#/properties/droute_num_terminals",
+        "detailedroute__terminals__num__total": {
+            "$id": "#/properties/detailedroute__terminals__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1035,8 +1035,8 @@
                 54
             ]
         },
-        "droute_num_nets": {
-            "$id": "#/properties/droute_num_nets",
+        "detailedroute__nets__num__total": {
+            "$id": "#/properties/detailedroute__nets__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1045,8 +1045,8 @@
                 588
             ]
         },
-        "droute_num_unique_instances": {
-            "$id": "#/properties/droute_num_unique_instances",
+        "detailedroute__unique_instances__num__total": {
+            "$id": "#/properties/detailedroute__unique_instances__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1055,8 +1055,8 @@
                 66
             ]
         },
-        "droute_num_instances": {
-            "$id": "#/properties/droute_num_instances",
+        "detailedroute__inst__num__total": {
+            "$id": "#/properties/detailedroute__inst__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1065,8 +1065,8 @@
                 631
             ]
         },
-        "droute_runtime": {
-            "$id": "#/properties/droute_runtime",
+        "detailedroute__runtime": {
+            "$id": "#/properties/detailedroute__runtime",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "TritonRoute self-measured runtime (s)",
@@ -1075,8 +1075,8 @@
                 3.81088
             ]
         },
-        "droute_wirelength": {
-            "$id": "#/properties/droute_wirelength",
+        "detailedroute__wirelength__est": {
+            "$id": "#/properties/detailedroute__wirelength__est",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "Total routed wirelength (um)",
@@ -1085,8 +1085,8 @@
                 7269
             ]
         },
-        "droute_total_num_vias": {
-            "$id": "#/properties/droute_total_num_vias",
+        "detailedroute__via__num__total": {
+            "$id": "#/properties/detailedroute__via__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1095,8 +1095,8 @@
                 2878
             ]
         },
-        "droute_peak_mem": {
-            "$id": "#/properties/droute_peak_mem",
+        "detailedroute__peak_mem": {
+            "$id": "#/properties/detailedroute__peak_mem",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1105,8 +1105,8 @@
                 "19.33"
             ]
         },
-        "droute_warnings": {
-            "$id": "#/properties/droute_warnings",
+        "detailedroute__warnings": {
+            "$id": "#/properties/detailedroute__warnings",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1115,8 +1115,8 @@
                 0
             ]
         },
-        "droute_errors": {
-            "$id": "#/properties/droute_errors",
+        "detailedroute__errors": {
+            "$id": "#/properties/detailedroute__errors",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1125,8 +1125,8 @@
                 0
             ]
         },
-        "droute_viols": {
-            "$id": "#/properties/droute_viols",
+        "detailedroute__drc__num__total": {
+            "$id": "#/properties/detailedroute__drc__num__total",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "improvement": -1,
@@ -1135,8 +1135,8 @@
                 1
             ]
         },
-        "droute_time": {
-            "$id": "#/properties/droute_time",
+        "run__detailedroute__time__total": {
+            "$id": "#/properties/run__detailedroute__time__total",
             "type": "string",
             "format": "duration",
             "description": "An explanation about the purpose of this instance.",
@@ -1145,8 +1145,8 @@
                 "0:03.90"
             ]
         },
-        "droute_cpu": {
-            "$id": "#/properties/droute_cpu",
+        "run__detailedroute__cpu__total": {
+            "$id": "#/properties/run__detailedroute__cpu__total",
             "type": "string",
             "description": "An explanation about the purpose of this instance.",
             "improvement": 0,
@@ -1154,8 +1154,8 @@
                 "97%"
             ]
         },
-        "droute_mem": {
-            "$id": "#/properties/droute_mem",
+        "run__detailedroute__mem__peak": {
+            "$id": "#/properties/run__detailedroute__mem__peak",
             "type": ["integer", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1164,8 +1164,8 @@
                 19796
             ]
         },
-        "finish_internal_power": {
-            "$id": "#/properties/finish_internal_power",
+        "finish__power__internal__total": {
+            "$id": "#/properties/finish__power__internal__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1174,8 +1174,8 @@
                 "1.35e-05"
             ]
         },
-        "finish_switching_power": {
-            "$id": "#/properties/finish_switching_power",
+        "finish__power__switch__total": {
+            "$id": "#/properties/finish__power__switch__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1184,8 +1184,8 @@
                 "7.49e-06"
             ]
         },
-        "finish_leakage_power": {
-            "$id": "#/properties/finish_leakage_power",
+        "finish__power__leak__total": {
+            "$id": "#/properties/finish__power__leak__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
@@ -1194,8 +1194,8 @@
                 "1.50e-05"
             ]
         },
-        "finish_total_power": {
-            "$id": "#/properties/finish_total_power",
+        "finish__power__total": {
+            "$id": "#/properties/finish__power__total",
             "type": ["number", "string"],
             "pattern": "^N/A$|^ERR$",
             "description": "An explanation about the purpose of this instance.",
