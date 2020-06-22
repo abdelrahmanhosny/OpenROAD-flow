@@ -38,3 +38,6 @@ if {![info exists standalone] || $standalone} {
   write_sdc $::env(RESULTS_DIR)/4_cts.sdc
   exit
 }
+
+# Extract Metrics
+report_cts -out_file $::env(REPORTS_DIR)/4_cts_metrics.rpt

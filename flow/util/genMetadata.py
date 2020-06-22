@@ -300,6 +300,19 @@ extractGnuTime("run__dp",logPath+"/3_3_opendp.log")
 
 # CTS
 # ==============================================================================
+extractTagFromFile("cts__clock_roots__total",
+                   "[TritonCTS Metrics] Total number of Clock Roots: +(\d+)",
+                   logPath+"/4_cts_metrics.rpt", t=int)
+extractTagFromFile("cts__buffers_inserted__total",
+                   "[TritonCTS Metrics] Total number of Buffers Inserted: +(\d+)",
+                   logPath+"/4_cts_metrics.rpt", t=int)
+extractTagFromFile("cts__clock_subnets__total",
+                   "[TritonCTS Metrics] Total number of Clock Subnets: +(\d+)",
+                   logPath+"/4_cts_metrics.rpt", t=int)
+extractTagFromFile("cts__sinks__total",
+                   "[TritonCTS Metrics] Total number of Sinks: +(\d+)",
+                   logPath+"/4_cts_metrics.rpt", t=int)
+
 extractGnuTime("run__cts",logPath+"/4_cts.log")
 
 # Route

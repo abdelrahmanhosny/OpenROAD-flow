@@ -87,6 +87,10 @@
         "run__detailedplace__runtime__total",
         "run__detailedplace__cpu__total",
         "run__detailedplace__mem__peak",
+        "cts__clock_roots__total",
+        "cts__buffers_inserted__total",
+        "cts__clock_subnets__total",
+        "cts__sinks__total",
         "run__cts__runtime__total",
         "run__cts__cpu__total",
         "run__cts__mem__peak",
@@ -925,6 +929,46 @@
             "improvement": 0,
             "examples": [
                 51952
+            ]
+        },
+        "cts__clock_roots__total": {
+            "$id": "#/properties/cts__clock_roots__total",
+            "type": ["number", "string"],
+            "pattern": "^N/A$|^ERR$",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": -1,
+            "examples": [
+                10
+            ]
+        },
+        "cts__buffers_inserted__total": {
+            "$id": "#/properties/cts__buffers_inserted__total",
+            "type": ["number", "string"],
+            "pattern": "^N/A$|^ERR$",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": -1,
+            "examples": [
+                200
+            ]
+        },
+        "cts__clock_subnets__total": {
+            "$id": "#/properties/cts__clock_subnets__total",
+            "type": ["number", "string"],
+            "pattern": "^N/A$|^ERR$",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": -1,
+            "examples": [
+                100
+            ]
+        },
+        "cts__sinks__total": {
+            "$id": "#/properties/cts__sinks__total",
+            "type": ["number", "string"],
+            "pattern": "^N/A$|^ERR$",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": -1,
+            "examples": [
+                100
             ]
         },
         "run__cts__runtime__total": {
