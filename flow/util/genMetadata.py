@@ -106,6 +106,16 @@ if (len(cmdFields) > 1):
   jsonFile["run__flow__openroad_commit"] = cmdFields[1]
 else:
   jsonFile["run__flow__openroad_commit"] = "N/A"
+try:
+  branch = subprocess.check_output(['git', 'rev-parse', '--abbrev-ref', 'HEAD'])
+  jsonFile["run__flow__branch"] = branch.strip().decode('utf-8')
+except:
+  jsonFile["run__flow__branch"] = "N/A"
+try:
+  git_hash = subprocess.check_output(['git', 'rev-parse', '--short', 'HEAD'])
+  jsonFile["run__flow__git_hash"] = git_hash.strip().decode('utf-8')
+except:
+  jsonFile["run__flow__git_hash"] = "N/A"
 jsonFile["run__flow__uuid"] = str(uuid.uuid4())
 jsonFile["run__flow__design"] = args.design
 jsonFile["run__flow__platform"] = args.platform

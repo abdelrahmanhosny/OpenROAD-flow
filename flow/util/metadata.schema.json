@@ -8,6 +8,8 @@
         "run__flow__generate_date",
         "run__flow__openroad_version",
         "run__flow__openroad_commit",
+        "run__flow__branch",
+        "run__flow__git_hash",
         "run__flow__uuid",
         "run__flow__design",
         "run__flow__platform",
@@ -152,6 +154,24 @@
             "improvement": 0,
             "examples": [
                 "8c0d2db176768e500a974b8794f65753faa9ef23"
+            ]
+        },
+        "run__flow__branch": {
+            "$id": "#/properties/run__flow__branch",
+            "type": "string",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": 0,
+            "examples": [
+                "master"
+            ]
+        },
+        "run__flow__git_hash": {
+            "$id": "#/properties/run__flow__git_hash",
+            "type": "string",
+            "description": "An explanation about the purpose of this instance.",
+            "improvement": 0,
+            "examples": [
+                "3a3196b"
             ]
         },
         "run__flow__uuid": {
